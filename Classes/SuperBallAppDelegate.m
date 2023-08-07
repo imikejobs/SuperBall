@@ -6,7 +6,8 @@
 @synthesize viewController;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
+    UIViewController* vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+    self.window.rootViewController = vc;
 	viewController = [[SplashViewController alloc] init];
     // Override point for customization after app launch    
     [window addSubview:[viewController view]];
