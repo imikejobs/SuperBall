@@ -103,8 +103,8 @@
 		tapToBegin.text = @"Tap To Begin";
 	}
 	
-	player_score.text = [NSString stringWithFormat:@"%d",player_score_value];
-	computer_score.text = [NSString stringWithFormat:@"%d",computer_score_value];
+    player_score.text = [NSString stringWithFormat:@"%ld",(long)player_score_value];
+    computer_score.text = [NSString stringWithFormat:@"%ld",(long)computer_score_value];
 }
 
 - (void)viewDidLoad {
